@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Stuart/SLC/app/src/main/res/drawable/background_button_launch.xml" value="0.25833333333333336" />
+        <entry key="..\:/Users/Stuart/SLC/app/src/main/res/drawable/background_launch_button.xml" value="0.25833333333333336" />
+        <entry key="..\:/Users/Stuart/SLC/app/src/main/res/drawable/bg_splash_progress.xml" value="0.14375" />
+        <entry key="..\:/Users/Stuart/SLC/app/src/main/res/drawable/drawable_rectangle_round_corners.xml" value="0.2324074074074074" />
+        <entry key="..\:/Users/Stuart/SLC/app/src/main/res/drawable/ic_no_network.xml" value="0.2324074074074074" />
+        <entry key="..\:/Users/Stuart/SLC/app/src/main/res/drawable/ic_spanner.xml" value="0.2324074074074074" />
+        <entry key="..\:/Users/Stuart/SLC/app/src/main/res/layout/activity_main.xml" value="0.16" />
+        <entry key="..\:/Users/Stuart/SLC/app/src/main/res/layout/activity_splash.xml" value="0.2421875" />
+        <entry key="..\:/Users/Stuart/SLC/app/src/main/res/layout/activity_zebra_test2.xml" value="0.2421875" />
+        <entry key="..\:/Users/Stuart/SLC/app/src/main/res/layout/dialog_progress.xml" value="0.2421875" />
+        <entry key="..\:/Users/Stuart/SLC/app/src/main/res/layout/dialog_standard.xml" value="0.2421875" />
+        <entry key="..\:/Users/Stuart/SLC/app/src/main/res/layout/fragment_conference.xml" value="0.2421875" />
+        <entry key="..\:/Users/Stuart/SLC/app/src/main/res/layout/fragment_event.xml" value="0.2421875" />
+        <entry key="..\:/Users/Stuart/SLC/app/src/main/res/layout/fragment_home.xml" value="0.23010752688172043" />
+        <entry key="..\:/Users/Stuart/SLC/app/src/main/res/layout/fragment_hotel.xml" value="0.2421875" />
+        <entry key="..\:/Users/Stuart/SLC/app/src/main/res/layout/fragment_login.xml" value="0.2421875" />
+        <entry key="..\:/Users/Stuart/SLC/app/src/main/res/layout/fragment_restaurant.xml" value="0.2421875" />
+        <entry key="..\:/Users/Stuart/SLC/app/src/main/res/layout/fragment_secretariat.xml" value="0.2421875" />
+        <entry key="..\:/Users/Stuart/SLC/app/src/main/res/layout/fragment_secretariat_details.xml" value="0.2" />
+        <entry key="..\:/Users/Stuart/SLC/app/src/main/res/layout/fragment_super_admin.xml" value="0.2421875" />
+        <entry key="..\:/Users/Stuart/SLC/app/src/main/res/layout/fragment_workshop.xml" value="0.2421875" />
+        <entry key="..\:/Users/Stuart/SLC/app/src/main/res/layout/item_type.xml" value="0.2421875" />
+        <entry key="..\:/Users/Stuart/SLC/app/src/main/res/layout/nav_header.xml" value="0.12760416666666666" />
+        <entry key="..\:/Users/Stuart/SLC/app/src/main/res/menu/menu_drawer_home.xml" value="0.2421875" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

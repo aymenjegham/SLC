@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.aymen.slc.ui.main.home.HomeFragment"
+        android:label="Acceuil"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/toLogin"
+            app:destination="@id/login"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:launchSingleTop="false"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@+id/home"
+            app:popUpToInclusive="false"
+            />
+
+        <action
+            android:id="@+id/toSuperAdmin"
+            app:destination="@id/superAdmin"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:launchSingleTop="false"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@+id/home"
+            app:popUpToInclusive="false"
+            />
+
+        <action
+            android:id="@+id/toSecretariat"
+            app:destination="@id/secretariat"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:launchSingleTop="false"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@+id/home"
+            app:popUpToInclusive="false" />
+
+        <action
+            android:id="@+id/toWorkshop"
+            app:destination="@id/workshop"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:launchSingleTop="false"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@+id/home"
+            app:popUpToInclusive="false"
+            />
+
+        <action
+            android:id="@+id/toHotel"
+            app:destination="@id/hotel"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:launchSingleTop="false"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@+id/home"
+            app:popUpToInclusive="false"
+            />
+
+        <action
+            android:id="@+id/toEvent"
+            app:destination="@id/event"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:launchSingleTop="false"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@+id/home"
+            app:popUpToInclusive="false"
+            />
+
+        <action
+            android:id="@+id/toRestaurant"
+            app:destination="@id/restaurant"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:launchSingleTop="false"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@+id/home"
+            app:popUpToInclusive="false"
+            />
+
+        <action
+            android:id="@+id/toConference"
+            app:destination="@id/conference"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:launchSingleTop="false"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@+id/home"
+            app:popUpToInclusive="false"
+            />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/login"
+        android:name="com.aymen.slc.ui.main.login.LoginFragment"
+        tools:layout="@layout/fragment_login"
+        android:label="Login">
+        <action
+            android:id="@+id/toHome"
+            app:destination="@id/home" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/superAdmin"
+        tools:layout="@layout/fragment_super_admin"
+        android:name="com.aymen.slc.ui.main.superAdmin.SuperAdminFragment"
+        android:label="Super Admin">
+
+        <action
+            android:id="@+id/toLogin"
+            app:destination="@id/login" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/secretariat"
+        tools:layout="@layout/fragment_secretariat"
+        android:name="com.aymen.slc.ui.main.secretariat.SecretariatFragment"
+        android:label="Secretariat">
+
+        <action
+            android:id="@+id/toLogin"
+            app:destination="@id/login" />
+
+        <action
+            android:id="@+id/toSecretariatDetails"
+            app:destination="@id/secretariatDetails"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/workshop"
+        tools:layout="@layout/fragment_workshop"
+        android:name="com.aymen.slc.ui.main.workshop.WorkshopFragment"
+        android:label="Atelier">
+
+        <action
+            android:id="@+id/toLogin"
+            app:destination="@id/login" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/hotel"
+        tools:layout="@layout/fragment_hotel"
+        android:name="com.aymen.slc.ui.main.hotel.HotelFragment"
+        android:label="Hotel" >
+
+        <action
+            android:id="@+id/toLogin"
+            app:destination="@id/login" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/event"
+        tools:layout="@layout/fragment_event"
+        android:name="com.aymen.slc.ui.main.event.EventFragment"
+        android:label="Evenement" >
+
+        <action
+            android:id="@+id/toLogin"
+            app:destination="@id/login" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/restaurant"
+        tools:layout="@layout/fragment_restaurant"
+        android:name="com.aymen.slc.ui.main.restaurant.RestaurantFragment"
+        android:label="Restaurant" >
+
+        <action
+            android:id="@+id/toLogin"
+            app:destination="@id/login" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/conference"
+        tools:layout="@layout/fragment_conference"
+        android:name="com.aymen.slc.ui.main.conference.ConferenceFragment"
+        android:label="Conference" >
+        <action
+            android:id="@+id/toLogin"
+            app:destination="@id/login" />
+    </fragment>
+    <fragment
+        android:id="@+id/secretariatDetails"
+        tools:layout="@layout/fragment_secretariat_details"
+        android:name="com.aymen.slc.ui.main.secretariat.secretariatDetails.SecretariatDetailsFragment"
+        android:label="information" >
+        <action
+            android:id="@+id/toLogin"
+            app:destination="@id/login" />
+        <argument
+            android:name="conf"
+            app:argType="com.aymen.slc.data.model.Conferee" />
+    </fragment>
+
+</navigation>

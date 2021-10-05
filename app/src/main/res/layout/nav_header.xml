@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="picasso"
+            type="com.squareup.picasso.Picasso" />
+
+        <variable
+            name="viewModel"
+            type="com.aymen.slc.ui.main.MainViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/view_container"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/secondary_light_variant"
+        android:orientation="vertical"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <ImageView
+            android:id="@+id/iv_company_logo"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:contentDescription="user_logo"
+            app:borderColor="@{@android:color/white}"
+            app:borderWidth="@{2}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:picasso="@{picasso}"
+            app:roundedImagePlaceholder="@{@drawable/ic_user}"
+            app:roundedImageUrl="@{viewModel.user.fullName}" />
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="8dp"
+            android:textSize="16dp"
+            android:text="@{viewModel.user.fullName}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_company_logo"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:textSize="16dp"
+            android:text="@{viewModel.user.email}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_company_logo"
+            app:layout_constraintTop_toBottomOf="@id/tv_username" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

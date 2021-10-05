@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary</item>
+        <item name="colorAccent">@color/primary_light_variant</item>
+        <item name="android:actionMenuTextColor">@android:color/white</item>
+    </style>
+
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:itemTextAppearance">@style/myCustomMenuTextAppearance</item>
+    </style>
+
+    <style name="button_style">
+        <item name="android:background">@color/secondary_light_variant</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+
+    <style name="Progress_Bar" parent="Widget.AppCompat.ProgressBar">
+        <item name="colorPrimaryDark">@color/primary_dark_variant</item>
+        <item name="colorAccent">@color/secondary_light_variant</item>
+    </style>
+
+    <style name="myCustomMenuTextAppearance" parent="@android:style/TextAppearance.Widget.IconMenu.Item">
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="ToolbarStyle" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="colorAccent">@android:color/white</item>
+        <item name="iconifiedByDefault">false</item>
+        <item name="colorControlActivated">#FFffffff</item>
+    </style>
+
+
+</resources>
